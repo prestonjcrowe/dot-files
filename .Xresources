@@ -1,0 +1,9 @@
+URxvt*background: #1c1c1c
+URxvt*foreground: #eeeee2
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvtscrollBar_floating: false
+URxvt*loginShell:  true
+
+URxvt*font: -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-iso8859-15,xft:terminus:pixelsize:12
+URxvt*boldFont: -xos4-terminus-bold-*-*-*-14-*-*-*-*-*-iso8859-15,xft:terminus:bold:pixelsize:12
