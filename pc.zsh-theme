@@ -1,4 +1,4 @@
-HOST="home"
+IDENTIFER="%n"
 
 # Primary color, appears in @
 COLOR="202"
@@ -11,8 +11,8 @@ COLOR_3="247"
 
 DEFAULT_COLOR="white"
 
-username() {
-   echo "%B%{$FG[$COLOR]%}%n%{$reset_color%}"
+identifier() {
+   echo "%B%{$FG[$COLOR]%}$IDENTIFER%{$reset_color%}"
 }
 
 hostname() {
@@ -38,5 +38,5 @@ ZSH_THEME_GIT_PROMPT_DIRTY="*"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # putting it all together
-PROMPT='$(username) $(directory)$(git_prompt_info)%b '
+PROMPT='$(identifier) $(directory)$(git_prompt_info)%b '
 RPROMPT='$(current_time)$(return_status)'
