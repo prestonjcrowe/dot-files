@@ -11,13 +11,12 @@ COLOR_3="247"
 
 DEFAULT_COLOR="white"
 
-# purple username
 username() {
-   echo "%B%{$FG[$DEFAULT_COLOR]%}%n%{$reset_color%}"
+   echo "%B%{$FG[$COLOR]%}%n%{$reset_color%}"
 }
 
 hostname() {
-   echo "%B%{$FG[$COLOR]%}@%{$reset_color%}%{$FG[$DEFAULT_COLOR]%}%B%m%{$reset_color%}"
+   echo "%B%{$FG[$DEFAULT_COLOR]%}@%{$reset_color%}%{$FG[$COLOR]%}%m%{$reset_color%}"
 }
 
 directory() {
@@ -39,5 +38,5 @@ ZSH_THEME_GIT_PROMPT_DIRTY="*"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # putting it all together
-PROMPT='$(username)$(hostname) $(directory)$(git_prompt_info)%b '
+PROMPT='$(username) $(directory)$(git_prompt_info)%b '
 RPROMPT='$(current_time)$(return_status)'
