@@ -11,15 +11,15 @@ call plug#begin()
 " :PlugUpate:   update plugins
 " :PlugClean:   remove plugins no longer in the list
 
-Plug 'dikiaap/minimalist'
 Plug 'morhetz/gruvbox'
+Plug 'dikiaap/minimalist'
 
 call plug#end()
 
 " Colorscheme and syntax highlighting
 set t_Co=256
 syntax on
-colorscheme gruvbox
+colorscheme minimalist
 
 " Set tab width to 4 and replace w/ spaces
 set tabstop=4
