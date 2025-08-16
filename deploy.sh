@@ -1,4 +1,5 @@
-# Eventually, convert to using GNU stow instead
+#!/bin/bash
+# Eventually, convert to using GNU stow instead...
 
 cp .vimrc ~/
 cp .zshrc ~/
