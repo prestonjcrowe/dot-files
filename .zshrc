@@ -76,7 +76,8 @@ SAVEHIST=5000
 HISTFILE=~/.zsh_history
 
 # zplug - manage plugins
-source /usr/share/zplug/init.zsh
+export ZPLUG_HOME=~/.zplug
+source $ZPLUG_HOME/init.zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
