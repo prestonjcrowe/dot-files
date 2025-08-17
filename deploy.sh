@@ -1,7 +1,10 @@
 #!/bin/bash
-# Eventually, convert to using GNU stow instead...
 
-cp .vimrc ~/
-cp .zshrc ~/
-cp pc.zsh-theme ~/.oh-my-zsh/themes/
-# cp motd /etc/motd
+set -o nounset
+set -o errexit
+set -o pipefail
+
+for d in $(find . -maxdepth 1 -mindepth 1 -type d -not -name ".git" -not -name "resources" -exec basename {} \;)
+do
+    stow "$d"
+done
