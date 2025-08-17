@@ -8,8 +8,7 @@ IDENTIFER="(ﾉ´･ω･)ﾉ %n"
 # IDENTIFER="¯\_(ツ)_/¯"
 
 # Primary color, appears in @
-COLOR="202"
-COLOR="156"
+COLOR="212"
 
 # Secondary color, appears in working dir
 COLOR_2="253"
