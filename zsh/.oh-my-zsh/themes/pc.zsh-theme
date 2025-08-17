@@ -3,9 +3,9 @@
 # Terminal BG Color: #131516
 
 # IDENTIFER="%n"
-# IDENTIFER="(ﾉ´･ω･)ﾉ %n"
+IDENTIFER="(ﾉ´･ω･)ﾉ %n"
 # IDENTIFER="|ω･)ﾉ"
-IDENTIFER="¯\_(ツ)_/¯"
+# IDENTIFER="¯\_(ツ)_/¯"
 
 # Primary color, appears in @
 COLOR="202"

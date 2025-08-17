@@ -96,20 +96,7 @@ zplug load # --verbose
 # Set editor
 export EDITOR='vim'
 
-# Add AppImage dir to $PATH
-export PATH="$PATH:$HOME/Applications/"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/home/pc/.lmstudio/bin"
-# End of LM Studio CLI section
-
-# pyenv path pits
+# pyenv path
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
-
-# Add .local/bin to $PATH for aider
-export PATH="$PATH:/home/pc/.local/bin"
-
-# Print motd
-cat /etc/motd
